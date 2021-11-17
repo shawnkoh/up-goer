@@ -2,9 +2,12 @@
   "name": "rescript-project-template",
   "version": "0.0.1",
   "scripts": {
-    "build": "rescript",
-    "clean": "rescript clean -with-deps",
-    "start": "rescript build -w"
+    "r:build": "rescript",
+    "r:clean": "rescript clean -with-deps",
+    "r:start": "rescript build -w",
+    "v:dev": "vite",
+    "v:build": "vite build",
+    "v:serve": "vite preview"
   },
   "keywords": [
     "rescript"
@@ -19,8 +22,10 @@
     "rescript": "*"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.9",
     "autoprefixer": "latest",
     "postcss": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "vite": "^2.6.14"
   }
 }
