@@ -1,1 +1,1 @@
-%%raw("import 'tailwindcss/tailwind.css'")
+%%raw("import './main.css'")
