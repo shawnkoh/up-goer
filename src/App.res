@@ -1,1 +1,1 @@
-%%raw("import './main.css'")
+%%raw("import '/styles/main.css'")
