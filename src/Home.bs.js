@@ -4,6 +4,10 @@ import * as React from "react";
 import * as Subscriber from "./Subscriber.bs.js";
 
 function Home(Props) {
+  var onClick = function (_evt) {
+    console.log("hello!");
+    return Subscriber.start(undefined);
+  };
   return React.createElement("div", {
               className: "bg-white"
             }, React.createElement("div", {
@@ -16,7 +20,9 @@ function Home(Props) {
                           className: "mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
                         }, "Take control of your team."), React.createElement("p", {
                           className: "max-w-xl mt-5 mx-auto text-xl text-gray-500"
-                        }, "Start building for free, then add a site plan to go live. Account plans unlock additional features."), React.createElement("button", undefined, "Subscribe"))));
+                        }, "Start building for free, then add a site plan to go live. Account plans unlock additional features."), React.createElement("button", {
+                          onClick: onClick
+                        }, "Subscribe"))));
 }
 
 var make = Home;

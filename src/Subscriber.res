@@ -33,12 +33,13 @@ external connect: string => 'whatever = "connect"
 // type client
 
 let start = () => {
-  let cli = connect("abc")
+  let cli = connect("mqtt://test.mosquitto.org")
 
   cli["on"]("connect")
   ->cli["subscribe"]
   ->(
     err => {
+      Js.log("connected?")
       if !err {
         // TODO: Not sure if this should be double bracket
         cli["publish"](("presence", "hello mqtt"))

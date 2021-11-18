@@ -1,6 +1,7 @@
 @react.component
 let make = () => {
   let onClick = _evt => {
+    Js.log("hello!")
     Subscriber.start()
   }
   <div className="bg-white">
@@ -18,7 +19,7 @@ let make = () => {
             "Start building for free, then add a site plan to go live. Account plans unlock additional features.",
           )}
         </p>
-        <button> {React.string("Subscribe")} </button>
+        <button onClick> {React.string("Subscribe")} </button>
       </div>
     </div>
   </div>

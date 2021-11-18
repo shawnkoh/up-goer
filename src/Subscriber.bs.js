@@ -8,8 +8,9 @@ function connect(prim) {
 }
 
 function start(param) {
-  var cli = SubscriberGen.connect("abc");
+  var cli = SubscriberGen.connect("mqtt://test.mosquitto.org");
   var err = Curry._1(cli.subscribe, Curry._1(cli.on, "connect"));
+  console.log("connected?");
   if (!err) {
     Curry._1(cli.publish, [
           "presence",
