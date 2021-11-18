@@ -3,7 +3,11 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
-  purge: ["./src/**/*.html", "./src/**/*.js", "./src/*.res"],
+  purge: {
+    content: ["./src/**/*.html", "./src/**/*.js", "./src/*.res"],
+    // https://stackoverflow.com/questions/63870891/purgecss-removing-tailwind-font-in-next-js
+    safelist: ["body", "html"],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
