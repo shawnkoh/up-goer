@@ -1322,6 +1322,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gentype@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "gentype@npm:4.3.0"
+  bin:
+    gentype: gentype.exe
+  checksum: 623d44505ae146f4794b697dd1cf95eaba2ba6426bf5aa06f07ad4777cde1fe8543c3a5be7b74e5ba9c07649a34031474051caa5c66e584307bf9b7815e2ab02
+  languageName: node
+  linkType: hard
+
 "glob-parent@npm:^5.1.2, glob-parent@npm:~5.1.2":
   version: 5.1.2
   resolution: "glob-parent@npm:5.1.2"
@@ -2292,6 +2301,7 @@ __metadata:
     "@vitejs/plugin-react": ^1.0.9
     autoprefixer: latest
     bs-platform: ^9.0.2
+    gentype: ^4.3.0
     postcss: latest
     react: ^17.0.2
     react-dom: ^17.0.2
