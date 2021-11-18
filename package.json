@@ -28,6 +28,7 @@
     "autoprefixer": "latest",
     "gentype": "^4.3.0",
     "postcss": "latest",
+    "prettier": "^2.4.1",
     "tailwindcss": "latest",
     "vite": "^2.6.14"
   }
