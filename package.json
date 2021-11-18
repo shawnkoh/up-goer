@@ -7,7 +7,8 @@
     "r:start": "rescript build -w",
     "v:dev": "vite",
     "v:build": "vite build",
-    "v:serve": "vite preview"
+    "v:serve": "vite preview",
+    "fk": "node src/subscriber.bs.js"
   },
   "keywords": [
     "rescript"
