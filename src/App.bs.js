@@ -3,7 +3,7 @@
 import * as Home from "./Home.bs.js";
 import * as React from "react";
 import * as PageNotFound from "./PageNotFound.bs.js";
-import * as RescriptReactRouter from "../node_modules/@rescript/react/lib/es6_global/src/RescriptReactRouter.bs.js";
+import * as RescriptReactRouter from "../node_modules/@rescript/react/src/RescriptReactRouter.bs.js";
 
 function App(Props) {
   var url = RescriptReactRouter.useUrl(undefined, undefined);
